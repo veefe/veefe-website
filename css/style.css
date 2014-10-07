@@ -1,11 +1,10 @@
-html, body { margin:0; height: 100%;}
+.background {
+	position:fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
 
-body {
-
-	height: 100%;                        /* para falta de suporte */
-	height: -webkit-calc(100% - 100px);  /* para Chrome */
-  	height: -moz-calc(100% - 100px);     /* para Firefox */
-  	height: calc(100% - 100px);          /* para suporte nativo */
 	background: #ef4323; /* Old browsers */
 	background: -moz-linear-gradient(45deg,  #ef4323 5%, #a21b1f 30%, #b91e58 55%, #f4841f 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left bottom, right top, color-stop(5%,#ef4323), color-stop(30%,#a21b1f), color-stop(55%,#b91e58), color-stop(100%,#f4841f)); /* Chrome,Safari4+ */
@@ -14,21 +13,64 @@ body {
 	background: -ms-linear-gradient(45deg,  #ef4323 5%,#a21b1f 30%,#b91e58 55%,#f4841f 100%); /* IE10+ */
 	background: linear-gradient(45deg,  #ef4323 5%,#a21b1f 30%,#b91e58 55%,#f4841f 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef4323', endColorstr='#f4841f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 .container {
+	position: fixed;
 	width: 210px;
-	margin:0 auto;
-	margin-top: 100px;
+	left: 50%;
+	bottom: 40%;
+	margin-left: -105px;
+
 }
 
 .logo-img {
-	width: 210px;
+	max-width:100%;
+	margin: 0 auto;
 }
 
 p {
-	font-size: 1.5em;
+	font-size: 1.8em;
 	font-family: 'Quicksand', sans-serif;
 	color: white;
-	margin-left: 58px;
+	text-align: right;
+	margin-top: 10%;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	bottom: 10%;
+}
+
+.txt-footer {
+	font-size: .8em;
+	text-align: center;
+}
+
+.heart {
+	color:red;
+	font-size: 1em;
+}
+
+.we-are-geeks a {
+	text-decoration: none;
+	color:white;
+	font-weight: bolder;
+	font-size:1em;
+}
+.we-are-geeks a:hover {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 345px) {
+	footer {
+		position: fixed;
+		width: 246px;
+		left: 50%;
+		margin-left: -123px;
+		bottom: 5%;
+	}
+
 }
