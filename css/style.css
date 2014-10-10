@@ -38,6 +38,10 @@ p {
 	margin-top: 10%;
 }
 
+/*
+FOOOTER
+*/
+
 footer {
 	position: absolute;
 	width: 100%;
@@ -45,14 +49,8 @@ footer {
 }
 
 .social-footer {
-	/*position: absolute;*/
 	width: 152px;
 	margin: 0 auto;
-	/*height: 28px;
-	left: 50%;
-	margin-left: -76px;
-	margin-bottom: 10%;*/
-
 }
 
 .social-footer-img {
@@ -103,6 +101,10 @@ footer {
 .we-are-geeks a:hover {
 	text-decoration: underline;
 }
+
+/*
+MEDIA QUERIES
+*/
 
 @media screen and (max-width: 345px) {
 	footer {
